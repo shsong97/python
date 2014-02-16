@@ -37,7 +37,7 @@ def tar_info(filename):
 	tar.close()
 
 #How to create a tar archive with faked information:
-
+#added
 def tar_fake(filename):
 	tar = tarfile.open(filename, "w:gz")
 	for name in namelist:
@@ -50,7 +50,7 @@ def tar_fake(filename):
 	tar.close()
 
 #The only way to extract an uncompressed tar stream from sys.stdin:
-
+#
 def tar_open_stdin():
 	tar = tarfile.open(mode="r|", fileobj=sys.stdin)
 	for tarinfo in tar:
@@ -62,7 +62,7 @@ def sample(*args):
 		with open(name) as f:
 			print(f.read())
 
-# python 3.3
+# python 3.3 (added-anotheraa)
 if __name__=="__main__":
 	usage="""
 Usage:
